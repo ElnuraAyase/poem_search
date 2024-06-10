@@ -1,1 +1,49 @@
+/* body background */
+body {
+    background-color: lightblue;
+}
+
+/* heading styles */
+h1 {
+    color: navy;
+}
+
+/* form styles */
+form {
+    margin-top: 20px;
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+
+/* button styles */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* link styles */
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+/* search results styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
 
