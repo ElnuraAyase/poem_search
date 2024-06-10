@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to handle form submission
+                                                 // Funct to handle form submission
     function handleFormSubmit(event) {
-        event.preventDefault(); // Prevent default form submission behavior
+        event.preventDefault();                  // Preventing default form submission
 
-        // Get the search word from the input field
+                                               // get the search word from the  input
         var searchWord = document.querySelector('input[name="search_word"]').value;
 
-        // Send an AJAX request to the backend to search for the word
+                                                 // Sending an AJAX request to the backend to search for the word
+        
         fetch('/search', {
             method: 'POST',
             headers: {
@@ -22,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error:', error));
     }
 
-    // Function to display search results
+                                                               // Funct to display search results 
     function displaySearchResults(results) {
-        // Clear previous search results
+                                                              // clear previous search result
         var searchResultsContainer = document.getElementById('searchResults');
         searchResultsContainer.innerHTML = '';
 
-        // Create list items for each search result
+                                                                // c reate list items for each search result
         results.forEach(function(result) {
             var li = document.createElement('li');
             li.textContent = result;
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add event listener for form submission
+                                                                  // adding event listener for form submission
     var searchForm = document.querySelector('form');
     searchForm.addEventListener('submit', handleFormSubmit);
 });
