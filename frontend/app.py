@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from backend import find_word
+from backend_ready import find_word
 
 app = Flask(__name__)
 
